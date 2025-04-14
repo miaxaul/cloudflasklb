@@ -20,7 +20,6 @@ CloudFlaskLB adalah aplikasi sederhana berbasis **Flask** yang dijalankan di ata
    - VPC custom
    - 1 atau lebih subnet (public dan/atau private)
    - Route Table + Internet Gateway
-   - NAT Gateway (jika perlu)
    - Security Group untuk EC2 dan EFS
 
 2. **ECR**
@@ -37,7 +36,7 @@ CloudFlaskLB adalah aplikasi sederhana berbasis **Flask** yang dijalankan di ata
 
 - AMI: Amazon Linux
 - Subnet: Public
-- IAM Role: `LabInstanceProfile`
+- IAM Role: `LabRole` dan `LabInstanceProfile`
 - Security Group: Allow SSH (22) dan HTTP (80)
 
 ### 2. SSH ke Instance dan Setup:
