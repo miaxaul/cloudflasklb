@@ -20,12 +20,13 @@ CloudFlaskLB adalah aplikasi sederhana berbasis **Flask** yang dijalankan di ata
    - VPC custom
    - 1 atau lebih subnet (public dan/atau private)
    - Route Table + Internet Gateway
-   - Security Group untuk EC2 dan EFS
+   - Security Group
 
 2. **ECR**
    - Private repository bernama: `cloudflasklb-repo`
 
 3. **IAM**
+   - `LabRole`
    - Instance EC2 menggunakan role: `LabInstanceProfile`
 
 ---
@@ -42,7 +43,6 @@ CloudFlaskLB adalah aplikasi sederhana berbasis **Flask** yang dijalankan di ata
 ### 2. SSH ke Instance dan Setup:
 
 ```bash
-sudo su
 yum update -y
 yum install git -y
 git clone https://github.com/miaxaul/cloudflasklb.git
