@@ -1,5 +1,5 @@
 # 🌐 CloudFlaskLB – Flask App dengan IP Public  
-👩‍💻 Author: https://github.com/miaxaul)
+👩‍💻 Author: https://github.com/miaxaul
 
 CloudFlaskLB adalah aplikasi sederhana berbasis **Flask** yang dijalankan di atas **Docker** dan dideploy ke **Amazon EC2** dengan **IP Public**. Proyek ini menampilkan bagaimana aplikasi containerized dapat dijalankan di AWS menggunakan ECR dan EC2.
 
